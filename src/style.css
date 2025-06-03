@@ -108,8 +108,8 @@
     color: white;
 }
 
-/* synonyms */
-.synonyms{
+/* synonyms and antonyms*/
+.synonyms, .antonyms{
     width: 100%;
     background: url(../public/background.jpeg);
     background-attachment: fixed;
@@ -119,11 +119,11 @@
     color: white;
     min-height: 90dvh;
 }
-.synonyms .container{
+.synonyms .container, .antonyms .container{
     width: 500px;
     max-width: 80%;
 }
-.synonymList:hover{
+.synonymList:hover, .antonymList:hover{
     text-shadow: 0px 0px 20px white;
     background:#333 !important;
 }

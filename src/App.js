@@ -1,6 +1,8 @@
 import './style.css'
 import Navbar from "./components/Navbar";
-import Synonyms from './components/Synonyms';
+// import Synonyms from './components/Synonyms';
+// import Antonyms from './components/Antonyms';
+import Dictionary from './components/Dictionary';
 // import Home from './components/Home';
 // import Analyze from './components/Analyze';
 
@@ -10,7 +12,9 @@ function App() {
       <Navbar title = "TEXTLENS"/>
       {/* <Home /> */}
       {/* <Analyze /> */}
-      <Synonyms />
+      {/* <Synonyms /> */}
+      {/* <Antonyms /> */}
+      <Dictionary />
     </>
   );
 }

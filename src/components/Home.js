@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 
 export default function Home() {
-    const features = ["Analyze Text", "Find Antonyms", "Find Synonyms", "Dictionary"];
+    const features = ["Analyze Text", "Find Antonyms", "Find Synonyms", "Find Rhyming words", "Dictionary"];
     const [text, setText] = useState("");
     const [featureIndex, setFeatureIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
 
     useEffect(() => {
-    const features = ["Analyze Text", "Find Antonyms", "Find Synonyms", "Dictionary"];
+    const features = ["Analyze Text", "Find Antonyms", "Find Rhyming words", "Find Synonyms", "Dictionary"];
 
         const currentFeature = features[featureIndex];
         let timeout;
@@ -63,7 +63,7 @@ export default function Home() {
                     })}</ul>
                 </div>
                 <div className="image">
-                    <img src="./background.jpeg" alt="background image" />
+                    <img src="./background.jpeg" alt="background " />
                 </div>
             </div>
 

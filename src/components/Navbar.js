@@ -24,6 +24,7 @@ export default function Navbar(props) {
                                     <li><a className="dropdown-item" href="/">Analyze Text</a></li>
                                     <li><a className="dropdown-item" href="/">Synonyms</a></li>
                                     <li><a className="dropdown-item" href="/">Antonyms</a></li>
+                                    <li><a className="dropdown-item" href="/">Rhyming words</a></li>
                                     <li><a className="dropdown-item" href="/">Dictionary</a></li>
                                 </ul>
                             </li>
