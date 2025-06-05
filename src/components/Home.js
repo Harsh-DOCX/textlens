@@ -63,7 +63,7 @@ export default function Home() {
                         <li className="featureList"><Link to="/antonyms" className="link">Antonyms</Link></li>
                         <li className="featureList"><Link to="/rhyming-word" className="link">Rhyming words</Link></li> 
                         <li className="featureList"><Link to="/translator" className="link">Translator</Link></li>
-                        <li className="featureList"><Link to="/scan-text-" className="link">Translator</Link></li>
+                        <li className="featureList"><Link to="/scan-text" className="link">Check Grammar</Link></li>
                     </ul>
                 </div>
                 <div className="image">
