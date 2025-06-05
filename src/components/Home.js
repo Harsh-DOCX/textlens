@@ -67,7 +67,7 @@ export default function Home() {
                     </ul>
                 </div>
                 <div className="image">
-                    <img src="/logo.jpg" alt="logo display " />
+                    <img src="./logo.jpg" alt="logo display " />
                 </div>
             </div>
 
