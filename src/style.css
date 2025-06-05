@@ -5,27 +5,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* loading sign */
-.wait {
-    height: 2.5rem;
-    width: 2.5rem;
-    border-radius: 50%;
-    margin-top: 20px;
-    animation: load 0.5s infinite ease-in-out alternate;
-    box-shadow: 0 0 12px rgba(0, 212, 255, 0.7);
-    /* will-change: transform, background-color, opacity; */
-}
-@keyframes load {
-    from {
-        transform: translate3d(40px, 0, 0) scale(0.9);
-        background-color: red;
-        opacity: 0.8;
-    }
-    to {
-        transform: translate3d(-40px, 0, 0) scale(0.9);
-        background-color: orangered;
-        opacity: 0.8;
-    }
+/*backgeround and basics */
+.home, .analyze, .synonyms, .antonyms, .dictionary, .contact{
+    width: 100%;
+    background: url(../public/background.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-height: 90dvh;
 }
 
 /* navbar */
@@ -47,15 +36,8 @@
     justify-content: center;
     flex-direction: column;
     height: 90dvh;
-    background: url('../public/background.jpeg');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: antiquewhite;
     overflow-y: auto;
     padding:0px 20px;
-    width: 100vw;
 }
 .hero {
     display: flex;
@@ -80,7 +62,10 @@
 .hero .texts ul li{
     list-style: none;
 }
-.hero .texts ul li:hover{
+.hero .texts ul li .link{
+    color: white;
+}
+.hero .texts ul li .link:hover{
     text-decoration: underline;
     text-shadow: 0px 0px 5px #333;
     color: #00ff88;
@@ -90,6 +75,7 @@
     width: 50%;
     overflow: hidden;
     border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
 .hero .image img {
     width: 100%;
@@ -97,28 +83,7 @@
     object-fit: cover;
 }
 
-/* text analyzer */
-.analyze{
-    min-height: 90dvh;
-    background: url(../public/background.jpeg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-
-/* synonyms and antonyms*/
-.synonyms, .antonyms{
-    width: 100%;
-    background: url(../public/background.jpeg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    min-height: 90dvh;
-}
+/* synonyms and antonyms */
 .synonyms .container, .antonyms .container{
     width: 500px;
     max-width: 80%;
@@ -126,4 +91,38 @@
 .synonymList:hover, .antonymList:hover{
     text-shadow: 0px 0px 20px white;
     background:#333 !important;
+}
+
+/* dictionary */
+
+/* responsiveness */
+@media (max-width: 768px) {
+    /* home */
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .hero .texts, .hero .image {
+        width: 100%;
+    }
+    .hero .texts {
+        padding: 10px;
+        text-align: center;
+    }
+    .hero .texts p {
+        font-size: 1rem;
+    }
+    .hero .image {
+        height: auto;
+        max-height: 300px;
+    }
+    .hero .image img {
+        object-fit: cover;
+    }
+
+    /* dictionary */
+    .languages{
+        flex-direction: column;
+    }
 }

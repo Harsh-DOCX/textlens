@@ -1,4 +1,7 @@
+import { Link} from "react-router-dom";
+
 export default function Navbar(props) {
+    // const navigate= useNavigate();    
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark custom-nav">
@@ -12,7 +15,7 @@ export default function Navbar(props) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <Link to="/" className="nav-link active" aria-current="page">Home</Link>
                             </li>
 
                             {/* First Dropdown */}
@@ -21,11 +24,11 @@ export default function Navbar(props) {
                                     Features
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="/">Analyze Text</a></li>
-                                    <li><a className="dropdown-item" href="/">Synonyms</a></li>
-                                    <li><a className="dropdown-item" href="/">Antonyms</a></li>
-                                    <li><a className="dropdown-item" href="/">Rhyming words</a></li>
-                                    <li><a className="dropdown-item" href="/">Dictionary</a></li>
+                                    <li><Link to="/analyse-text" className="dropdown-item">Analyze Text</Link></li>
+                                    <li><Link to="/synonyms" className="dropdown-item">Synonyms</Link></li>
+                                    <li><Link to="/antonyms" className="dropdown-item">Antonyms</Link></li>
+                                    <li><a className="dropdown-item" href="/">Rhyming words</a></li> {/*styll to work on*/}
+                                    <li><Link to="/translator" className="dropdown-item">Dictionary</Link></li>
                                 </ul>
                             </li>
 
@@ -36,15 +39,14 @@ export default function Navbar(props) {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li><a className="dropdown-item " href="/">About-us</a></li>
-                                    <li><a className="dropdown-item" href="/">Contact-us</a></li>
-                                    <li><a className="dropdown-item" href="/">Developer</a></li>
+                                    <li><Link to="/contact-us" className="dropdown-item">Contact-us</Link></li>
+                                    <li><Link onClick={()=>{window.open("https://harsh-docx.github.io/harshcode", '_blank')}} className="dropdown-item">Developer</Link></li>
                                 </ul>
                             </li>
                         </ul>
 
                         {/* Search Form */}
                         <div className="d-flex" role="search">
-                            {/* <i className="bi bi-moon"></i> */}
                         </div>
                     </div>
                 </div>

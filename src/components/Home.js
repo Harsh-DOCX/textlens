@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
-    const features = ["Analyze Text", "Find Antonyms", "Find Synonyms", "Find Rhyming words", "Dictionary"];
     const [text, setText] = useState("");
     const [featureIndex, setFeatureIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
@@ -56,14 +56,17 @@ export default function Home() {
                         Unlock the power of words with LEXTLENS — your all-in-one tool to analyze text, find synonyms and antonyms, and explore dictionary meanings effortlessly. Whether you're a writer, student, or language enthusiast, LEXTLENS helps you enhance your vocabulary and sharpen your writing.
                     </p>
                     <h3>OUR FEATURES: </h3>
-                    <ul>{features.map((Element, index) =>{
-                        return(
-                            <li key={index} id={`feature${index}`} className="featureList">{Element}</li>
-                        )
-                    })}</ul>
+                    <ul>
+
+                        <li className="featureList"><Link to="/analyse-text" className="link">Analyze text</Link></li>
+                        <li className="featureList"><Link to="/synonyms" className="link">Synonyms</Link></li>
+                        <li className="featureList"><Link to="antonyms" className="link">Antonyms</Link></li>
+                        <li className="featureList"><Link >Rhyming words</Link></li> {/*still to work*/} 
+                        <li className="featureList"><Link to="/translator" className="link">Translator</Link></li>
+                    </ul>
                 </div>
                 <div className="image">
-                    <img src="./background.jpeg" alt="background " />
+                    <img src="./logo.jpg" alt="background " />
                 </div>
             </div>
 
