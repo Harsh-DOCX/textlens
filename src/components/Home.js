@@ -8,7 +8,7 @@ export default function Home() {
     const [isDeleting, setIsDeleting] = useState(false);
 
     useEffect(() => {
-    const features = ["Analyze Text", "Find Antonyms", "Find Rhyming words", "Find Synonyms", "Dictionary"];
+    const features = ["Analyze Text", "Find Antonyms", "Find Rhyming words", "Find Synonyms", "Dictionary", "Check Gramatic Error"];
 
         const currentFeature = features[featureIndex];
         let timeout;
@@ -60,13 +60,14 @@ export default function Home() {
 
                         <li className="featureList"><Link to="/analyse-text" className="link">Analyze text</Link></li>
                         <li className="featureList"><Link to="/synonyms" className="link">Synonyms</Link></li>
-                        <li className="featureList"><Link to="antonyms" className="link">Antonyms</Link></li>
-                        <li className="featureList"><Link >Rhyming words</Link></li> {/*still to work*/} 
+                        <li className="featureList"><Link to="/antonyms" className="link">Antonyms</Link></li>
+                        <li className="featureList"><Link to="/rhyming-word" className="link">Rhyming words</Link></li> 
                         <li className="featureList"><Link to="/translator" className="link">Translator</Link></li>
+                        <li className="featureList"><Link to="/scan-text-" className="link">Translator</Link></li>
                     </ul>
                 </div>
                 <div className="image">
-                    <img src="./logo.jpg" alt="background " />
+                    <img src="/logo.jpg" alt="logo display " />
                 </div>
             </div>
 

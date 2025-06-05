@@ -7,6 +7,9 @@ import Dictionary from './components/Dictionary';
 import Home from './components/Home';
 import Analyze from './components/Analyze';
 import Contact from './components/Contact';
+import About from './components/About';
+import Rhyme from './components/Rhyme';
+import Error from './components/Error';
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
           <Route path='/antonyms' element={<Antonyms />} />
           <Route path='/translator' element={<Dictionary />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path='/rhyming-word' element={<Rhyme />}/>
+          <Route path='/scan-text' element={<Error/>} />
         </Routes>
       </Router>
     </>

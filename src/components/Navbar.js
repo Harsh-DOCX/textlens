@@ -1,7 +1,6 @@
 import { Link} from "react-router-dom";
 
 export default function Navbar(props) {
-    // const navigate= useNavigate();    
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark custom-nav">
@@ -27,7 +26,8 @@ export default function Navbar(props) {
                                     <li><Link to="/analyse-text" className="dropdown-item">Analyze Text</Link></li>
                                     <li><Link to="/synonyms" className="dropdown-item">Synonyms</Link></li>
                                     <li><Link to="/antonyms" className="dropdown-item">Antonyms</Link></li>
-                                    <li><a className="dropdown-item" href="/">Rhyming words</a></li> {/*styll to work on*/}
+                                    <li><Link to="/rhyming-word" className="dropdown-item">Rhyming words</Link></li>
+                                    <li><Link to="/scan-text" className="dropdown-item">check gramatic error</Link></li>
                                     <li><Link to="/translator" className="dropdown-item">Dictionary</Link></li>
                                 </ul>
                             </li>
@@ -38,16 +38,16 @@ export default function Navbar(props) {
                                     Info
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item " href="/">About-us</a></li>
+                                    <li><Link to="/about-us" className="dropdown-item ">About-us</Link></li>
                                     <li><Link to="/contact-us" className="dropdown-item">Contact-us</Link></li>
                                     <li><Link onClick={()=>{window.open("https://harsh-docx.github.io/harshcode", '_blank')}} className="dropdown-item">Developer</Link></li>
                                 </ul>
                             </li>
                         </ul>
 
-                        {/* Search Form */}
+                        {/* Search Form
                         <div className="d-flex" role="search">
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </nav>

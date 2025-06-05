@@ -6,9 +6,9 @@
 }
 
 /*backgeround and basics */
-.home, .analyze, .synonyms, .antonyms, .dictionary, .contact{
+.home, .analyze, .synonyms, .antonyms, .dictionary, .contact, .About, .rhyme, .about, .contact{
     width: 100%;
-    background: url(../public/background.jpeg);
+    background: url(/background.jpeg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,6 +21,7 @@
 .custom-nav {
     min-height: 10dvh;
     position: sticky;
+    z-index: 1050;
 }
 .custom-nav .dropdown-item:hover {
     background-color: rgb(33,37,41);
@@ -84,16 +85,46 @@
 }
 
 /* synonyms and antonyms */
-.synonyms .container, .antonyms .container{
+.synonyms .container, .antonyms .container, .rhyme .container{
     width: 500px;
     max-width: 80%;
 }
-.synonymList:hover, .antonymList:hover{
+.synonymList:hover, .antonymList:hover, .rhymingList:hover{
     text-shadow: 0px 0px 20px white;
     background:#333 !important;
 }
 
 /* dictionary */
+.dictionary{
+    height: 90dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dictionary .wait{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 400px;
+    width: 400px;
+    max-height: 90%;
+    max-width: 100%;
+}
+.spin{
+    animation: load 2s linear infinite;
+}
+@keyframes load {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 /* responsiveness */
 @media (max-width: 768px) {

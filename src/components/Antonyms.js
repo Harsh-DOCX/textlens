@@ -37,6 +37,7 @@ export default function Antonyms() {
             <div className="antonyms">
                 <div className="container">
                     <div className="mb-3 pt-5">
+                        <h1 className='mb-5'>textlens - <span style={{fontSize:"2rem"}}>ANTONYMS</span></h1>
                         <h2>Enter word below:</h2>
                         <input
                             type="text"
