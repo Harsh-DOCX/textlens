@@ -14,7 +14,7 @@ import Error from './components/Error';
 function App() {
   return (
     <>
-      <Router basename='textlens/'>
+      <Router basename='textlens'>
         <Navbar title="TEXTLENS" />
         <Routes>
           <Route path='/' element={<Home />} />

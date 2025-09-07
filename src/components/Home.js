@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import logo from '../assets/logo.jpg';
 
 export default function Home() {
     const [text, setText] = useState("");
@@ -67,7 +68,7 @@ export default function Home() {
                     </ul>
                 </div>
                 <div className="image">
-                    <img src="./logo.jpg" alt="logo display " />
+                    <img src={logo} alt="logo display " />
                 </div>
             </div>
 
