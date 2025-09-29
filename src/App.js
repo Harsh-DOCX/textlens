@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Rhyme from './components/Rhyme';
 import Error from './components/Error';
+import TextToBinary from './components/TextToBinary';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path='/rhyming-word' element={<Rhyme />}/>
           <Route path='/scan-text' element={<Error/>} />
+          <Route path='bit-conversion' element ={<TextToBinary/>}/>
         </Routes>
       </Router>
     </>

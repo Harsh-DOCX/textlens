@@ -29,6 +29,8 @@ export default function Navbar(props) {
                                     <li><Link to="/rhyming-word" className="dropdown-item">Rhyming words</Link></li>
                                     <li><Link to="/scan-text" className="dropdown-item">check gramatic error</Link></li>
                                     <li><Link to="/translator" className="dropdown-item">Dictionary</Link></li>
+                                    <li><Link to="/bit-conversion" className="dropdown-item">Binary and text conversion</Link></li>
+
                                 </ul>
                             </li>
 

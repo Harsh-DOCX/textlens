@@ -6,7 +6,7 @@
 }
 
 /*backgeround and basics */
-.home, .analyze, .synonyms, .antonyms, .dictionary, .contact, .About, .rhyme, .about, .contact{
+.home, .analyze, .synonyms, .antonyms, .dictionary, .contact, .About, .rhyme, .about, .contact, .binary{
     width: 100%;
     background: url(../public/background.jpeg);
     background-attachment: fixed;
@@ -124,6 +124,14 @@
     to{
         transform: rotate(360deg);
     }
+}
+
+/* binary to text */
+.binary textarea{
+    background: #ebe0e0;
+}
+.binary #copyBtn{
+    text-shadow: 0px 0px 2px black;
 }
 
 /* responsiveness */

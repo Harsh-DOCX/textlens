@@ -65,6 +65,7 @@ export default function Home() {
                         <li className="featureList"><Link to="/rhyming-word" className="link">Rhyming words</Link></li> 
                         <li className="featureList"><Link to="/translator" className="link">Translator</Link></li>
                         <li className="featureList"><Link to="/scan-text" className="link">Check Grammar</Link></li>
+                        <li className="featureList"><Link to="/bit-conversion" className="link">Binary and text conversion</Link></li>
                     </ul>
                 </div>
                 <div className="image">
