@@ -6,7 +6,7 @@
 }
 
 /*backgeround and basics */
-.home, .analyze, .synonyms, .antonyms, .dictionary, .contact, .About, .rhyme, .about, .contact, .binary{
+.home, .analyze, .synonyms, .antonyms, .dictionary, .contact, .About, .rhyme, .about, .contact, .binary, .morse{
     width: 100%;
     background: url(../public/background.jpeg);
     background-attachment: fixed;
@@ -126,12 +126,15 @@
     }
 }
 
-/* binary to text */
-.binary textarea{
-    background: #ebe0e0;
-}
-.binary #copyBtn{
+#copyBtn{
     text-shadow: 0px 0px 2px black;
+}
+#copybtn:hover{
+    text-shadow: 0px 0px 10px white;
+    background: #333 !important;
+}
+#copyBtn:active{
+    transform: scale(0.95);
 }
 
 /* responsiveness */

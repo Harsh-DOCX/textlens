@@ -5,7 +5,7 @@ export default function Navbar(props) {
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark custom-nav">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="/">{props.title}</a>
+                    <a className="navbar-brand" href="/textlens">{props.title}</a>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                         <span className="navbar-toggler-icon"></span>
@@ -30,6 +30,7 @@ export default function Navbar(props) {
                                     <li><Link to="/scan-text" className="dropdown-item">check gramatic error</Link></li>
                                     <li><Link to="/translator" className="dropdown-item">Dictionary</Link></li>
                                     <li><Link to="/bit-conversion" className="dropdown-item">Binary and text conversion</Link></li>
+                                    <li><Link to="/morse-conversion" className="dropdown-item">Morse and text conversion</Link></li>
 
                                 </ul>
                             </li>

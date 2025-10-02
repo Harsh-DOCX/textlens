@@ -11,6 +11,7 @@ import About from './components/About';
 import Rhyme from './components/Rhyme';
 import Error from './components/Error';
 import TextToBinary from './components/TextToBinary';
+import Morse from './components/Morse';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/rhyming-word' element={<Rhyme />}/>
           <Route path='/scan-text' element={<Error/>} />
           <Route path='bit-conversion' element ={<TextToBinary/>}/>
+          <Route path='morse-conversion' element={<Morse/>}/>
         </Routes>
       </Router>
     </>

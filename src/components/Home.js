@@ -56,7 +56,7 @@ export default function Home() {
                     <p>
                         Unlock the power of words with LEXTLENS — your all-in-one tool to analyze text, find synonyms and antonyms, and explore dictionary meanings effortlessly. Whether you're a writer, student, or language enthusiast, LEXTLENS helps you enhance your vocabulary and sharpen your writing.
                     </p>
-                    <h3>OUR FEATURES: </h3>
+                    <h3>SOME FEATURES: </h3>
                     <ul>
 
                         <li className="featureList"><Link to="/analyse-text" className="link">Analyze text</Link></li>
